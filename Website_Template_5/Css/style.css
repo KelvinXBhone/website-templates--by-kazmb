@@ -1,0 +1,581 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+    background-color: #fff;
+}
+header .logo{
+    font-size: 3rem;
+    color: rgb(49, 49, 49);
+    font-weight: 600;
+}
+header .logo{
+    color: black;
+    font-size: 2.5rem;
+}
+header nav a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: black;
+}
+header nav a:hover{
+    color: darkkhaki;
+}
+header .icons a{
+    font-size: 2.1rem;
+    color: black;
+    margin-left: 1.4rem;
+}
+header .icons a:hover{
+    color: darkkhaki;
+}
+header #toggle{
+    display: none;
+}
+header .fa-bars{
+    font-size: 1.8rem;
+    color: black;
+    border-radius: 5px ;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: 1rem solid rgba(0,0,0,0.2) ;
+    display: none;
+}
+section{
+    padding: 2rem 8%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+    background: url(../imgs/homew-1.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.home .h1content{
+    max-width: 50rem;
+}
+.home .h1content h2{
+    font-size: 3.5rem;
+    color: #fff;
+    background-color: black;
+    padding: 10px;
+    width: 350px;
+}
+.home .h1content p{
+    font-size: 2.5rem;
+    margin-top: 40px;
+}
+.home .h1content button{
+    padding: 10px 30px;
+    border-radius: 15px;
+    background-color: rgb(22, 22, 22);
+    color: #ffffffcb;
+    margin-top: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.home .h1content button:hover{
+    transform: scale(1.1);
+    background-color: darkkhaki;
+}
+.heading{
+    font-size: 3rem;
+    color: black;
+    margin: 2rem 0;
+    text-align: center;
+}
+.heading span{
+    color: darkkhaki;
+}
+.aboutus .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.row{
+    background-color: darkkhaki;
+}
+.aboutus .row .img-container{
+    flex: 1 1 39rem;
+    position: relative;
+    padding: 40px;
+}
+.aboutus .row .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
+.aboutus .row .content{
+    flex: 1 1 39rem;
+}
+.aboutus .content h3{
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.aboutus .row .content{
+    padding: 20px;
+}
+.aboutus .content p{
+    font-size: 2.5rem;
+    line-height: 1.4;
+}
+.aboutus .content button{
+    padding: 10px 30px ;
+    background-color: black;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.aboutus .content button:hover{
+    transform: scale(1.1);
+}
+.sdproducts{
+    background-color: darkkhaki;
+    width: 100%;
+    margin-top: 5rem;
+}
+.sdproducts .sdhead h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 15px;
+}
+.sdproducts .sdhead h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: -5px;
+    margin-bottom: 2rem;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+}
+.card{
+    width: 325px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.card-content{
+    padding: 40px;
+    text-align: center;
+}
+.card-content h2{
+    font-size: 3.5rem;
+}
+.card-content p{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.card-content button{
+    background-color: black;
+    padding: 10px 0 10px 20px;
+    color: #fff;
+}
+.card-content button span{
+    background-color: darkkhaki;
+    padding: 10px 10px;
+}
+.iconsbar{
+    display: flex;
+    background-color: #eee;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    gap: 1.5rem;
+    padding-bottom: 5rem;
+}
+.iconsbar .icons{
+    border: 3px solid rgba(0,0,0,0.2);
+    background: black;
+    display: flex;
+    padding: 2rem;
+    flex: 1 1 25rem;
+    align-items: center;
+}
+.iconsbar .icons .info h3{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.iconsbar .icons .info span{
+    color: darkkhaki;
+    font-size: 20px;
+}
+.icons .info i{
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+}
+.tsp .row{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    border: 3px solid darkkhaki;
+}
+.tsp .row{
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
+.tsp .row .tspimg{
+    flex: 1 1 39rem;
+    position: relative;
+    padding: 40px;
+}
+.tsp .row .tspimg img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
+.tsp .row .tspcontent{
+    flex: 1 1 39rem;
+}
+.tsp .tspcontent h3{
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 20px;
+}
+.tsp .row .content{
+    padding: 20px;
+}
+.tsp .tspcontent p{
+    font-size: 2.5rem;
+    line-height: 1.4;
+}
+.tsp .tspcontent button{
+    padding: 10px 30px ;
+    background-color: black;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.tsp .tspcontent button:hover{
+    transform: scale(1.1);
+}
+.footer{
+    background-color: darkkhaki;
+    margin: 3rem 0 0 0;
+}
+.footer .footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.footer .footer-container .box{
+    flex: 1 1 25rem;
+}
+.footer .footer-container .box h3{
+    text-decoration: underline;
+    color: black;
+    font-size: 2.5rem;
+    padding: 1em 0;
+}
+.footer .footer-container .box a{
+    display: block;
+    color: white;
+    font-size: 2rem;
+    padding: 0.2em 0;
+}
+.footer .footer-container .box a:hover{
+    color: black;
+    transform: scale(1.01);
+}
+.footer .footer-container .box .footer-icons{
+    display: flex;
+    padding: 5px 0;
+}
+.footer .footer-container .box .footer-icons a{
+    padding: 5px 3px;
+}
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: black;
+}
+.tp2{
+    margin: 80px;
+}
+.tp2 .row{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 2rem 4rem;
+    padding-bottom: 3rem;
+    border: 3px solid darkkhaki;
+}
+.tp2 .row{
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
+.tp2 .row .tp2img{
+    flex: 1 1 39rem;
+    position: relative;
+    padding: 40px;
+}
+.tp2 .row .tp2img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
+.tp2 .row .tp2content{
+    flex: 1 1 39rem;
+}
+.tp2 .tp2content h3{
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 20px;
+}
+.tp2 .row .content{
+    padding: 20px;
+}
+.tp2 .tp2content p{
+    font-size: 2.5rem;
+    line-height: 1.4;
+}
+.tp2 .tp2content button{
+    padding: 10px 30px ;
+    background-color: black;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.tp2 .tp2content button:hover{
+    transform: scale(1.1);
+}
+.sdproducts2{
+    background-color: darkkhaki;
+    width: 100%;
+    margin-top: 5rem;
+}
+.sdproducts2 .sdhead h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 15px;
+}
+.sdproducts2 .sdhead h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: -5px;
+    margin-bottom: 2rem;
+}
+.card-container2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+}
+.card2{
+    width: 325px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card2:hover{
+    transform: scale(1.05);
+}
+.card2 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.card-content2{
+    padding: 40px;
+    text-align: center;
+}
+.card-content2 h2{
+    font-size: 3.5rem;
+}
+.card-content2 p{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.card-content2 button{
+    background-color: black;
+    padding: 10px 0 10px 20px;
+    color: #fff;
+}
+.card-content2 button span{
+    background-color: darkkhaki;
+    padding: 10px 10px;
+}
+.contact{
+    margin: 5rem;
+}
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.contact .row form{
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.2);
+    border: 0.1rem solid rgba(0,0,0,0.2);
+    background: #fff;
+}
+.contact .row .img{
+    flex: 1 1 40rem;
+}
+.contact .row .img img{
+    width: 100%;
+}
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: black;
+    text-transform: none;
+    border: 2px solid rgba(0,0,0,0.2);
+    margin: 0.5rem 0;
+    width: 100%;
+}
+.contact .row form{
+    padding: 80px 20px;
+}
+.contact .row button{
+    padding: 10px 30px;
+    background-color: darkkhaki;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+/* Cart */
+.cartbigbox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    align-items: end;
+    font-size: 20px;
+  }
+  .tablebox{
+    border-collapse: collapse;
+    margin-top: 150px;
+    width: 100%;
+  }
+  .tablebox tr th{
+    text-align: start;
+    background-color: cadetblue;
+    color: whitesmoke;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .productbox{
+    display: flex;
+    padding: 25px;
+    font-size: 20px;
+  }
+  .productbox .img img{
+    width: 200px;
+    margin-right: 20px;
+  }
+  .price{
+    display: flex;
+    flex-direction: column;
+  }
+  .pricebox{
+    border-top: 3px solid cadetblue;
+    width: 400px;
+    margin-bottom: 80px;
+  }
+  .pricebox .row{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .tablebox tr td input{
+    padding: 10px;
+    width: 60px;
+  }
+
+/* Media */
+@media(max-width:990px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1.5rem;
+    }
+}
+@media(max-width:765px){
+    html .fa-bars{
+        display: block;
+        border: 2px solid darkkhaki;
+    }
+    header nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #8d8d8d;
+        border-top: 0.1rem solid rgba(0,0,0,0.2);
+        display: none;
+    }
+    header #toggle:checked ~ nav{
+        display: block;
+    }
+    header nav a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: 0.1rem solid rgba(0,0,0,0,3);
+        display: block;
+    }
+    .aboutus .row .content{
+        padding: 20px;
+    }
+}
