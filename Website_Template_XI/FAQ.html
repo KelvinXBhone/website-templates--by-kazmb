@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <style type="text/css">
+  a{
+    color: black;
+  }
+  .dropdown-item
+  {
+    color: grey;
+  }
+ 
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+/*.popmenu{
+
+  background-color: #81DAF5;
+}*/
+
+body{
+  position: relative;
+}
+.cta-area {
+  z-index: 2;
+  width: 100%;
+  height: 675px;
+  background-attachment: fixed; }
+  .cta-area .cta-content h2 {
+    font-size: 72px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 400;}
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .cta-area .cta-content h2 {
+        font-size: 48px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .cta-area .cta-content h2 {
+        font-size: 48px; } }
+    @media only screen and (max-width: 767px) {
+      .cta-area .cta-content h2 {
+        font-size: 30px; } }
+  .cta-area .cta-content p {
+    color: #ffffff;
+    margin-bottom: 100px;
+    font-size: 16px; }
+    @media only screen and (max-width: 767px) {
+      .cta-area .cta-content p {
+        margin-bottom: 50px; } }
+        .h-100{height:100}
+        .footer_widget_area {
+  background: #181818;
+  padding: 100px 0px;
+}
+footer {
+    background: url(../images/footer_bg.jpg)no-repeat;
+    background-size:cover;
+    position:relative;
+    padding-top:45px;
+}
+footer::before {
+    background: rgba(255, 255, 255, 0.33) none repeat scroll 0 0;
+    content: "";
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+footer::after {
+    background: rgba(34, 37, 51, 0.9) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.footer_top,.footer_bottom{ position:relative; z-index:1; color:#fff;}
+.footer_item {
+    margin-top: 75px;
+}
+.footer_item > h4 {
+    color: #fff;
+    font-family: "futura_ltbook",sans-serif;
+    font-size: 25px;
+    margin-bottom: 34px;
+    text-transform: inherit;
+}
+.footer_item .list-unstyled > li a{
+    color: #fff;
+}
+/* Footer About */
+.footer_item .logo {
+    margin-bottom: 15px;
+    width: 200px;
+}
+.list-inline.footer_social_icon {
+    margin: 32px 0 0;
+}
+.footer_social_icon .fa {
+    background: #ffcb0f none repeat scroll 0 0;
+    border-radius: 100%;
+    color: #222;
+    font-size: 20px;
+    height: 45px;
+    padding: 12px;
+    text-align: center;
+    width: 45px;
+}
+.footer_item .footer_social_icon .fa:hover,.footer_item .footer_social_icon .fa:focus {
+    background: #d7a300 none repeat scroll 0 0;
+}
+/* Footer Explore */
+.footer_menu .fa {
+    font-size: 10px;
+    margin-right: 18px;
+}
+.list-unstyled.footer_menu > li {
+    padding: 4px 0;
+}
+/* Footer Post */
+.list-unstyled.post,.list-unstyled.footer_contact {
+    margin-top: -14px;
+}
+.post .date {
+    border: 2px solid #fff;
+    border-radius: 100%;
+    display: block;
+    float: left;
+    font-size: 20px;
+    height: 50px;
+    line-height: 12px;
+    margin-right: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 50px;
+}
+.footer_item li a:hover .date,.footer_item li a:focus .date{ border:2px solid #aaa; }
+.footer_item li a:hover,.footer_item li a:focus{
+    color: #aaa;
+}
+.post .date small {
+    font-size: 12px;
+}
+
+.list-unstyled.post > li,.list-unstyled.footer_contact > li {
+    padding: 14px 0;
+    overflow:hidden;
+}
+/* Footer Contact */
+.footer_contact .fa {
+    margin-right: 25px;
+    text-align: center;
+    width: 15px;
+    float: left;
+    font-size:18px;
+}
+.list-unstyled.footer_contact p {
+    overflow: hidden;
+}
+.footer_bottom {
+    background: #1a1c27 none repeat scroll 0 0;
+    padding: 28px 0 18px;
+    margin-top:55px;
+}
+.footer_bottom a {
+    color: #ffcb0f;
+}
+.footer_bottom a:hover,.footer_bottom a:focus {
+    color: #d7a300;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+.breadcumb-area {
+  position: relative;
+  z-index: 10;
+  width: 92%;
+  height: 190px;
+  margin-left: 4%;
+  margin-right: 4%; }
+  @media only screen and (max-width: 767px) {
+    .breadcumb-area {
+      height: 120px; } }
+  .breadcumb-area .breadcumb-text h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #ffffff; }
+    @media only screen and (max-width: 767px) {
+      .breadcumb-area .breadcumb-text h2 {
+        font-size: 24px; } }
+        @import url(https://fonts.googleapis.com/css?family=Raleway:800);
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+/*start of logo*/
+.snip1266 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  color: #bdbdbd;
+  margin: 0px 20px 60px;
+  max-width: 295px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+.snip1266 h1,
+.snip1266 h5 {
+  margin: 0;
+  text-transform: uppercase;
+}
+.snip1266 h1 {
+  font-family: 'Arvo', Arial, sans-serif;
+  font-size: 2.1em;
+  line-height: 1.1em;
+  position: relative;
+  font-weight: 900;
+  margin-top: 38px;
+}
+.snip1266 h1:before {
+  content: '';
+  position: absolute;
+  background-color: #bdbdbd;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 180px;
+  height: 32px;
+  border-radius: 50% 50% 0 0;
+  border: solid #bdbdbd;
+  border-width: 3px;
+  box-shadow: 0 0 0 3px #212121 inset;
+  bottom: 100%;
+}
+.snip1266 h5 {
+  font-size: 0.7em;
+  font-weight: 800;
+  color: #212121;
+  background-color: #bdbdbd;
+  width: 180px;
+  margin: 0 auto;
+  line-height: 3em;
+  border-radius: 0 0px 20px 20px;
+  border: solid #bdbdbd;
+  border-width: 3px;
+  box-shadow: 0 0 0 3px #212121 inset;
+}
+.snip1266 i {
+  font-size: 1.3em;
+  color: #bdbdbd;
+}
+.snip1266 i:nth-of-type(2) {
+  font-size: 2em;
+}
+/* Demo purposes only */
+.site-primary-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: Raleway;
+}
+@media screen and (max-width: 768px) {
+  .display-4 {
+    font-size: 37px;
+  }
+}
+.form-wrap {
+  border-top: 10px solid #FBB448;
+  position: relative;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+}
+.form-wrap h3 {
+  font-family: "Kaushan Script", cursive;
+}
+ .form-wrap .tab-menu {
+  padding: 0 !important;
+  margin: 0 0 -10px 0 !important;
+  width: 100%;
+  float: left;
+  z-index: 12;
+  position: relative;
+}
+.form-wrap .tab-menu li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline;
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+ .form-wrap .tab-menu li a {
+  padding: 10px 20px 20px 20px;
+  float: left;
+  width: 100%;
+  display: block;
+  background: rgba(255, 255, 255, 0.5);
+  color: #1a1a1a;
+}
+ .form-wrap .tab-menu li a:hover {
+  color: #1a1a1a;
+}
+ .form-wrap .tab-menu li.active a {
+  display: block;
+  padding: 10px 20px 20px 20px;
+  background: #fff;
+  color: #FBB448;
+}
+ .form-wrap .tab-menu li.gtco-first a {
+  border-top-left-radius: 7px;
+}
+ .form-wrap .tab-menu li.gtco-second a {
+  border-top-right-radius: 7px;
+}
+ .form-wrap .tab-content {
+  z-index: 10;
+  position: relative;
+  clear: both;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+ .form-wrap .tab-content h3 {
+  color: brown;
+}
+.form-wrap .tab-content label {
+  color: rgba(255, 255, 255, 0.8);
+}
+ .form-wrap .tab-content .tab-content-inner {
+  display: none;
+}
+ .form-wrap .tab-content .tab-content-inner.active {
+  display: block;
+}
+.form-wrap .tab-content .form-control {
+  color: #brown !important;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.cursive-font {
+  font-family: "Kaushan Script", cursive;
+}
+/*end of logo*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.snip1268 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333333;
+  text-align: center;
+  background-color: #ffffff;
+  line-height: 1.6em;
+}
+.snip1268 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.snip1268 .image {
+  position: relative;
+}
+.snip1268 img {
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+.snip1268 .icons,
+.snip1268 .add-to-cart {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  opacity: 0;
+}
+.snip1268 .icons {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.snip1268 .icons a {
+  width: 32.5%;
+  background: #ffffff;
+}
+.snip1268 .icons a:hover {
+  background: #000000;
+}
+.snip1268 .icons a:hover i {
+  color: #ffffff;
+  opacity: 1;
+}
+.snip1268 .icons i {
+  line-height: 46px;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  opacity: 0.7;
+  margin: 0;
+}
+.snip1268 .add-to-cart {
+  position: absolute;
+  bottom: 20px;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  font-size: 0.8em;
+  color: #000000;
+  line-height: 46px;
+  letter-spacing: 1.5px;
+  background-color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.snip1268 .add-to-cart:hover {
+  background: #000000;
+  color: #ffffff;
+}
+.snip1268 figcaption {
+  padding: 20px 20px 30px;
+}
+.snip1268 h2,
+.snip1268 p {
+  margin: 0;
+  text-align: left;
+}
+.snip1268 h2 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.snip1268 p {
+  margin-bottom: 15px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+.snip1268 .price {
+  font-size: 1.3em;
+  opacity: 0.5;
+  font-weight: 700;
+  text-align: right;
+}
+.snip1268:hover img,
+.snip1268.hover img {
+  opacity: 0.8;
+}
+.snip1268:hover .icons,
+.snip1268.hover .icons,
+.snip1268:hover .add-to-cart,
+.snip1268.hover .add-to-cart {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.snip0067 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background: #ffffff;
+  color: #000000;
+}
+
+figure.snip0067 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+figure.snip0067 img {
+  max-width: 100%;
+  position: relative;
+  display: block;
+}
+
+figure.snip0067:before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 90%;
+  z-index: 1;
+  left: -20%;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #fff;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: skewX(-30deg) translateX(-80%);
+  transform: skewX(-30deg) translateX(-80%);
+  -webkit-box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+figure.snip0067 figcaption {
+  padding-left: 30px;
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 60%;
+  z-index: 1;
+  opacity: 0;
+}
+
+figure.snip0067 figcaption h2,
+figure.snip0067 figcaption p {
+  margin: 0;
+  text-align: left;
+  padding: 5px 0 0;
+  width: 100%;
+}
+
+figure.snip0067 figcaption h2 {
+  font-size: 1.4em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+figure.snip0067 figcaption h2 span {
+  font-weight: 800;
+}
+
+figure.snip0067 figcaption p {
+  font-weight: 500;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+figure.snip0067 figcaption .icons {
+  width: 100%;
+  padding: 8px 0;
+}
+
+figure.snip0067 figcaption .icons i {
+  display: inline-block;
+  font-size: 20px;
+  background: #000000;
+  color: #ffffff;
+  margin-right: 5px;
+  opacity: 0;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+}
+
+figure.snip0067 figcaption a {
+  opacity: 0.7;
+}
+
+figure.snip0067 figcaption a:hover {
+  opacity: 1;
+}
+
+figure.snip0067 .position {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  padding: 15px 30px;
+  font-size: 0.9em;
+  opacity: 1;
+  font-weight: 500;
+  color: #ffffff;
+  background: #000000;
+}
+
+figure.snip0067.blue .icons i {
+  background: #164666;
+}
+
+figure.snip0067.blue .position {
+  background: #20638f;
+}
+
+figure.snip0067.red .icons i {
+  background: #6d2018;
+}
+
+figure.snip0067.red .position {
+  background: #962d22;
+}
+
+figure.snip0067.yellow .icons i {
+  background: #924d10;
+}
+
+figure.snip0067.yellow .position {
+  background: #bf6516;
+}
+
+figure.snip0067.green .icons i {
+  background: #145b32;
+}
+
+figure.snip0067.green .position {
+  background: #1e8449;
+}
+
+figure.snip0067:hover figcaption,
+figure.snip0067.hover figcaption,
+figure.snip0067:hover .icons i,
+figure.snip0067.hover .icons i {
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+figure.snip0067:hover:before,
+figure.snip0067.hover:before {
+  -webkit-transform: skewX(-30deg) translateX(0px);
+  transform: skewX(-30deg) translateX(0px);
+}
+
+
+/* Demo purposes only */
+html {
+  height: 100%;
+}
+.nav-link
+{
+  color:  #cacfd2;
+
+}
+
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600);
+figure.snip1278 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 310px;
+  width: 100%;
+  background: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+figure.snip1278 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+figure.snip1278 .image {
+  background-color: #000000;
+  width: 100%;
+  overflow: hidden;
+}
+figure.snip1278 .image:after {
+  background-color: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 50%;
+  bottom: 0;
+}
+figure.snip1278 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+figure.snip1278 figcaption {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 10px 25px;
+}
+figure.snip1278 h4,
+figure.snip1278 p,
+figure.snip1278 .price {
+  margin: 0 0 8px;
+}
+figure.snip1278 h4 {
+  position: absolute;
+  width: 50%;
+  top: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+figure.snip1278 p {
+  font-size: 0.7em;
+  font-weight: 500;
+  line-height: 1.6em;
+}
+figure.snip1278 .rating {
+  position: absolute;
+  width: 50%;
+  line-height: 44px;
+  color: #ffffff;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+figure.snip1278 .price {
+  color: #ffffff;
+  font-size: 1.3em;
+  opacity: 0.8;
+}
+figure.snip1278 .price s {
+  display: inline-block;
+  padding: 0 8px 0 0;
+  font-size: 0.85em;
+  color: #f39c12;
+}
+figure.snip1278 .add-to-cart {
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-weight: 600;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  line-height: 44px;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+figure.snip1278:hover img,
+figure.snip1278.hover img {
+  opacity: 0.6;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+figure.snip1278:hover .add-to-cart,
+figure.snip1278.hover .add-to-cart {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.wew{
+  background-image: url(Gallery/new.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 15px;
+}
+/*end of menu product card*/
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.snip1557 {
+  font-family: 'Poppins', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.2em;
+  text-align: center;
+  font-weight: 300;
+}
+
+.snip1557 *,
+.snip1557 *:before,
+.snip1557 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.65s ease;
+  transition: all 0.65s ease;
+}
+
+.snip1557:after {
+  -webkit-transition: all 0.65s ease;
+  transition: all 0.65s ease;
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  top: -478px;
+  left: -478px;
+  border-radius: 50%;
+  border: 500px solid transparent;
+  border-top-color: #000000;
+  border-left-color: #000000;
+  content: '';
+  opacity: 0.8;
+}
+
+.snip1557 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1557 i {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  border-radius: 50%;
+  color: #000000;
+  display: block;
+  z-index: 10;
+}
+
+.snip1557 i:before,
+.snip1557 i:after {
+  border-radius: 50%;
+}
+
+.snip1557 i:before {
+  color: #ddd;
+  background-color: #fff;
+  font-size: 37.64705882px;
+  line-height: 64px;
+  text-align: center;
+  width: 64px;
+}
+
+.snip1557 i:after {
+  position: absolute;
+  top: -14px;
+  bottom: -14px;
+  left: -14px;
+  right: -14px;
+  border: 15px solid #ddd;
+  border-top-color: #2980b9;
+  border-left-color: #2980b9;
+  content: '';
+  z-index: -2;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.snip1557 i:hover {
+  background-color: #D2B17F;
+  cursor: pointer;
+}
+
+.snip1557 h3 {
+  bottom: 0;
+  color: #fff;
+  letter-spacing: 2px;
+  margin: 0;
+  opacity: 0;
+  padding: 10px 15px;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.snip1557 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+
+.snip1557:hover:after,
+.snip1557.hover:after {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.snip1557:hover img,
+.snip1557.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.snip1557:hover i:before,
+.snip1557.hover i:before {
+  color: #2980b9;
+}
+
+.snip1557:hover i:after,
+.snip1557.hover i:after {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.snip1557:hover h3,
+.snip1557.hover h3 {
+  opacity: 1;
+}
+.gal
+{
+
+      background-image: url(Gallery/background.jpg); min-height: 300px; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;
+}
+@import url(https://fonts.googleapis.com/css?family=Lato:400,600,700);
+.snip1527 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 16px;
+  margin: 10px;
+  max-width: 310px;
+  min-width: 250px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.snip1527 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.snip1527 img {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+}
+
+.snip1527 figcaption {
+  padding: 25px 20px 25px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.snip1527 figcaption:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #700877;
+  content: '';
+  background: -moz-linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: -webkit-linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.snip1527 .date {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #700877;
+  font-size: 18px;
+  font-weight: 700;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 10px 0;
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  top: -25px;
+}
+
+.snip1527 .date span {
+  display: block;
+  line-height: 14px;
+}
+
+.snip1527 .date .month {
+  font-size: 11px;
+}
+
+.snip1527 h3,
+.snip1527 p {
+  margin: 0;
+  padding: 0;
+}
+
+.snip1527 h3 {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  margin-bottom: 5px;
+}
+
+.snip1527 p {
+  font-size: 0.8em;
+  line-height: 1.6em;
+  margin-bottom: 0px;
+}
+
+.snip1527 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.snip1527:hover img,
+.snip1527.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+/* Demo purposes only */
+html {
+  height: 100%;
+}
+body {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  height: 100%;
+}
+.how-section1{
+    margin-top:-15%;
+    padding: 10%;
+}
+.how-section1 h4{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
+}
+.how-section1 .subheading{
+    color: #3931af;
+    font-size: 20px;
+}
+.how-section1 .row
+{
+    margin-top: 10%;
+}
+.how-img 
+{
+    text-align: center;
+}
+.how-img img{
+    width: 40%;
+}
+/*start of contact us*/
+#contatti{
+  background-color: #99a3a4;
+  letter-spacing: 2px;
+  }
+#contatti a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+@media (max-width: 575.98px) {
+
+  #contatti{padding-bottom: 800px;}
+  #contatti .maps iframe{
+    width: 100%;
+    height: 450px;
+  }
+ }
+
+
+@media (min-width: 576px) {
+
+   #contatti{padding-bottom: 800px;}
+
+   #contatti .maps iframe{
+     width: 100%;
+     height: 450px;
+   }
+ }
+
+@media (min-width: 768px) {
+
+  #contatti{padding-bottom: 350px;}
+
+  #contatti .maps iframe{
+    width: 100%;
+    height: 850px;
+  }
+}
+
+@media (min-width: 992px) {
+  #contatti{padding-bottom: 200px;}
+
+   #contatti .maps iframe{
+     width: 100%;
+     height: 700px;
+   }
+}
+
+
+#author a{
+  color: #fff;
+  text-decoration: none;
+    
+}
+.bmenu {
+  padding-top : 0px;
+  text-align :center;
+ 
+  position : relative;
+ }
+
+.bmenu li{
+  font-size : 10px;
+  font-weight : bold;
+  display : inline;
+ 
+ }
+
+.bmenu li a{
+  color :#fff;
+  padding : 10px;
+  text-decoration : none;
+  display :inline;
+  text-transform : uppercase;
+  letter-spacing : 2px;
+  --webkit-transition : all 0.2s ease-in-out;
+  --o-transition : all 0.2s ease-in-out;
+  --moz-transition : all 0.2s ease-in-out;
+  --ms-transition : all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.bmenu:hover li a{
+  text-shadow : 0px 0px 10px #fff;
+  
+}
+.bmenu li a:hover{
+  color : #fff;
+  text-shadow : 0px 0px 1px #fff;
+  border-bottom : 8px solid rgba(20,0,0,0.5);
+  border-radius : 1px;
+  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.2);
+    
+}
+/*start of FAQ*/
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: rgba(0,0,0,.1);
+}
+
+h2 {
+  margin: 20px auto 80px;
+  font-size: 38px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+details {
+  width: 75%;
+  min-height: 5px;
+  max-width: 700px;
+  padding: 30px 70px 30px 30px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 22px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all .3s;
+}
+
+details + details {
+  margin-top: 20px;
+}
+
+details[open] {
+  min-height: 50px;
+  background-color: #f6f7f8;
+  box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
+
+details p {
+  color: #96999d;
+  font-weight: 300;
+}
+
+summary {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* removed outline as for codepen only
+  don't remove focus on elements
+  it's bad accessibility
+  don't be _that_ guy
+*/
+summary:focus {
+  outline: none;
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+summary::after {
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: rebeccapurple;
+  font-family: "Font Awesome 5 Free";
+  font-size: 15px;
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-ligatures: normal;
+  font-weight: 900;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f078";
+  transform: translateY(-50%);
+  transition: .3s ease;
+}
+
+details[open] summary::after {
+  content: "\f057";
+  font-size: 30px;
+  top: 0;
+  transform: translateY(0);
+  transition: .3s ease;
+}
+
+details[open] summary:hover::after {
+  animation: pulse 1s ease;
+}
+
+@keyframes pulse {
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style>
+<script type="text/javascript">
+  $(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );
+  
+</script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row gg">
+   <div class="col-md-12">
+<nav class="navbar navbar-expand-sm bg-dark">
+  <a class="navbar-brand" href="index.html">
+   <br><div class="snip1266">
+    <i class="ion-android-star-outline"></i><i class="ion-android-star-outline"></i><i class="ion-android-star-outline"></i>
+  <h1 style="font-size: 15px;"><span style="color: red;">HOTPOT</span><span style="color: green;">CITY</span><span style="color: blue;">AHLONE</span></h1>
+  <h5><i class='fab fa-angellist' style='font-size:21px; color:#848484;'></i><span style="color: #F3F781;">Restaurant</span><i class='fab fa-angellist' style='font-size:21px; color:#848484;'></i></h5>
+</div></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"><i class="fa fa-bars" style="font-size:30px; margin-right: 20px;"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav bmenu">
+     <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="aboutus.html">AboutUs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="service.html">Service</a>
+    </li>
+     <li class="nav-item">
+    <a class="nav-link" href="register.html">Register</a>
+    </li> <li class="nav-item">
+      <a class="nav-link" href="promotion.html">Promotion</a>
+    </li> <li class="dropdown">
+     
+    <a href="#" data-toggle="dropdown">Menu</a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="set&drinks.html" style="color: grey;">Set&Drinks</a>
+    <a class="dropdown-item" href="meat.html" style="color: grey;">Meat</a>
+    <a class="dropdown-item" href="seafood.html" style="color: grey;">Seafood</a>
+    <a class="dropdown-item" href="soup.html" style="color: grey;">Soup</a>
+    <a class="dropdown-item" href="vegetable.html" style="color: grey;">Vegetable</a>
+  </div>
+ 
+</li>
+    <li class="nav-item">
+      <a class="nav-link" href="gallery.html">Gallery</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="chef.html">Chef</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="FAQ.html">FAQ</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="contactus.html">ContactUs</a>
+    </li> 
+    <li>
+      <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" style="margin-left: 2px;">
+      </div>
+      </form>
+    </li>
+    
+    <li>
+    <a href="add-to-cart.html" style="margin-left: 5px; font-size:24px; color: grey;"><i class="fa fa-cart-plus"></i></a>
+    </li>
+   
+</ul>
+
+</div>
+</nav>
+</div>
+
+</div>
+
+<!-- end of navigation -->
+<div class="container-fluid">
+  <h2>Frequently Asked Questions</h2>
+
+<details>
+  <summary>1.What are the age restrictions in restaurant?</summary>
+  <p>Only over 18 age people are allowed to serve alcohol.</p>
+</details>
+
+<details>
+  <summary>2.When does the restaurant open at Monday to Friday?</summary>
+  <p>Opening at 9:00AM-9:00Pm at Monday to Friday.</p>
+</details>
+
+<details>
+  <summary>3.How many tastes of soup at restaurant?</summary>
+  <p>There are two tastes of soup at restaurant.</p>
+</details>
+<details>
+  <summary>4.Does the restaurant close in weekends?</summary>
+  <p>No.The restaurant opens at 9:00Am-11:00PM in weekends.</p>
+</details>
+<details>
+  <summary>5.When did the restaurant establish?</summary>
+  <p>The restaurant was established in March 2018.</p>
+</details>
+<details>
+  <summary>6.Is there delivery at restaurant?</summary>
+  <p>Yes.There is delivery at restaurant.</p>
+</details>
+<details>
+  <summary>7.Can you tell me about membership?</summary>
+  <p>The membership is discount which is main for the our member customer who like coming and eating our hotpot every time.</p>
+</details>
+<!--  -->
+<details>
+  <summary>8.Which services are included?</summary>
+  <p>The included services are free wifi, delivery, phone charging, car parking, Order service and Assistant service.</p>
+</details>
+
+<details>
+  <summary>9.If a person wants to eat single, can he eat in this restaurant?</summary>
+  <p>Yes. And he doesn't need to buy the set. </p>
+</details>
+
+<details>
+  <summary>10.Does the space is enough for the car parking?</summary>
+  <p>Yes. The space is wide enough for the car parking.</p>
+</details>
+<details>
+  <summary>11.Are the food of Hot Pot City Ahlone organic?</summary>
+  <p>Yes. The food are organic and freshy.</p>
+</details>
+<details>
+  <summary>12.Can I register the membership of Ahlone Hot Pot City?</summary>
+  <p>Yes you can. But, the register will cost in its role of membership.</p>
+</details>
+<details>
+  <summary>13.Can I Pay with Cash?</summary>
+  <p>Yes you can. But, we accept only Myanmar Kyats (MMK).</p>
+</details>
+<details>
+  <summary>14.Are there other payments except cash?</summary>
+  <p>Yes.There are Visa, Paypal, Master Card and online credit card.</p>
+</details>
+<details>
+<summary>15.Can I make booking for eating in this restaurant?</summary>
+  <p>Yes. You can make booking.</p>
+</details>
+
+<br>
+</div>
+   <footer>
+            <!-- Footer top -->
+            <div class="container-fluid footer_top">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-7">
+                        <div class="footer_item">
+                            <label><h1 style="font-size: 30px; text-align: center;">Open Time Schedule</h1></label>
+                            
+                            <p>Monday 9:00AM-9:00PM</p>
+                            
+                            <p>Tuesday 9:00AM-9:00PM</p>
+                            
+                            <p>Wednesday 9:00AM-9:00PM</p>
+                            
+                            <p>Thursday 9:00AM-9:00PM</p>
+                            
+                            <p>Friday 9:00AM-9:00PM</p>
+                            
+                            <p>Saturday 9:00AM-11:00PM</p>
+                            
+                            <p>Sunday 9:00AM-11:00PM</p>
+                            
+
+                            <span class="list-inline footer_social_icon">
+                                <a href="https://www.facebook.com/hotpotcityahlone/" style="font-size: 24px;"><span class="fab fa-facebook-f"></span></a>
+                                <a href="" style="font-size: 24px;"><span class="fab fa-twitter"></span></a>
+                                <a href="" style="font-size: 24px;"><span class="fab fa-youtube"></span></a>
+                              <a href="" style="font-size: 24px;"><span class="fab fa-google-plus"></span></a>
+                                <a href="" style="font-size: 24px;"><span class="fab fa-linkedin"></span></a>                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-5">
+                        <div class="footer_item">
+                            <h4>Explore link</h4>
+                            <ul class="list-unstyled footer_menu">
+                                <li><a href="index.html"><span class="fa fa-play"></span>Home</a>
+                                <li><a href="aboutus.html"><span class="fa fa-play"></span>About Us</a>
+                                <li><a href="gallery.html"><span class="fa fa-play"></span>Gallery</a>
+                                <li><a href="service.html"><span class="fa fa-play"></span>Service</a>
+                                <li><a href="chef.html"><span class="fa fa-play"></span>Chef</a>
+                                <li><a href="contactus.html"><span class="fa fa-play"></span>Contact Us</a>
+                                <li><a href="register.html"><span class="fa fa-play"></span>Register</a>
+                                <li><a href="promotion.html"><span class="fa fa-play"></span>Promotion</a>
+                                <li><a href="FAQ.html"><span class="fa fa-play"></span>FAQ</a>
+                                  <li><a href="terms.html"><span class="fa fa-play"></span>Terms&Conditions</a>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-sm-5">
+                        <div class="footer_item">
+                            <h4>Contact us</h4>
+                            <ul class="list-unstyled footer_contact">
+                                <li><a href="https://www.google.com.mm/maps/place/Hot+Pot+City+(Ahlone)/@16.7867609,96.1311132,17z/data=!3m1!4b1!4m5!3m4!1s0x30c1eb6d6e86c4d5:0xf3b5e68c355b6a5b!8m2!3d16.7867609!4d96.1333019"><span class="fa fa-map-marker"></span>No(71/A),Corner of Thit Taw street and Min Ye Kyaw Swar street,Ahlone township,Yangon</a></li>
+                                <li><a href=""><span class="fa fa-envelope"></span> www.ahlonehotpotcity@gmail.com</a></li>
+                                <li><a href=""><span class="fa fa-mobile"></span><p>+95 780888866</p></a></li>
+
+                                <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Footer top end -->
+
+            <!-- Footer bottom -->
+            <div class="footer_bottom text-center">
+                <p class="wow fadeInRight">
+                    CopyRight©2018.Design 
+                    <i class="fa fa-heart"></i>
+                    by 
+                    <a target="_blank" href="#">Khun Myat Bhone.</a> 
+                    All Rights Reserved.
+                </p>
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='fas fa-angle-double-up' style='font-size:48px;color:white'></i></button><!-- Footer bottom end -->
+        </footer>
+ 
+
+
+</body>
+</html>
